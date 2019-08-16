@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="merge_poses_pkg" type="merge_poses_node" name="merge_poses_node">
+		<remap from="odom1" to="X1/odometry"/>
+		<remap from="odom2" to="X1/odometry"/>
+		<remap from="odom3" to="X2/odometry"/>
+	</node>
+</launch>
