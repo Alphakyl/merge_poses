@@ -1,4 +1,5 @@
 #include "ros/ros.h"
+#include "math.h"
 #include "geometry_msgs/PoseArray.h"
 #include "geometry_msgs/Pose.h"
 #include "nav_msgs/Odometry.h"
@@ -49,7 +50,7 @@ int main(int argc, char **argv)
 
     for (int i = 0; i < 10; i++)
     {
-      if(is_initialized[i])
+      if(is_initialized[i] && !isnan(pose[i].orientation.x) && !isnan(pose[i].orientation.y) && !isnan(pose[i].orientation.z) && !isnan(pose[i].orientation.w))
       poseArrayMsg.poses.push_back(pose[i]);
     }
 
