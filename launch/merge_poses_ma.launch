@@ -1,0 +1,14 @@
+<launch>
+<node pkg="merge_poses_pkg" type="merge_poses_node" name="merge_poses_node">
+<remap from="odom0" to="/Base/neighbors/H01/odometry"/>
+<remap from="odom1" to="/Base/neighbors/H02/odometry"/>
+<remap from="odom2" to="/Base/neighbors/H03/odometry"/>
+<remap from="odom3" to="/Base/neighbors/T01/odometry"/>
+<remap from="odom4" to="/Base/neighbors/T02/odometry"/>
+<remap from="odom5" to="/Base/neighbors/L01/odometry"/>
+<remap from="odom6" to="/Base/neighbors/A01/odometry"/>
+<remap from="odom7" to="/Base/neighbors/A02/odometry"/>
+<remap from="odom8" to="/Base/neighbors/T03/odometry"/>
+<remap from="odom9" to="/Base/neighbors/N7/odometry"/>
+</node>
+</launch>
