@@ -8,7 +8,7 @@
 <remap from="odom5" to="/Base/neighbors/L01/odometry"/>
 <remap from="odom6" to="/Base/neighbors/A01/odometry"/>
 <remap from="odom7" to="/Base/neighbors/A02/odometry"/>
-<remap from="odom8" to="/Base/neighbors/T03/odometry"/>
-<remap from="odom9" to="/Base/neighbors/N7/odometry"/>
+<remap from="odom8" to="/Base/neighbors/D01/odometry"/>
+<remap from="odom9" to="/Base/neighbors/D02/odometry"/>
 </node>
 </launch>
